@@ -1,0 +1,83 @@
+.testimonials {
+    &__header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        max-width: 300px;
+        margin: 0;
+    }
+
+    &__rightHeader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    &__arrow {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        font-size: 28px;
+        text-align: center;
+        line-height: 60px;
+        background-color: $arrowBgColor;
+        color: $mainFontColor;
+        transition: 200ms;
+
+        &:hover {
+            background-color: $buttonColor;
+            color: $mainLinkColor;
+        }
+    }
+
+    &__boxes {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    &__testimonial {
+        max-width: 50%;
+        padding: 30px;
+        border-radius: 25px;
+        box-shadow: 0px 20px 35px 10px rgba(17, 6, 50, 0.075);
+    }
+
+    &__author {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__photo {
+        display: flex;
+        width: 80px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            border-radius: 50%;
+            width: 100%;
+        }
+    }
+
+    &__name,
+    &__company {
+        font-family: $mainFontFamily;
+        margin: 0;
+    }
+
+    &__company {
+        color: $mainFontColor;
+    }
+
+
+}

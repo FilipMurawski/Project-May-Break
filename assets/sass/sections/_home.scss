@@ -1,0 +1,75 @@
+.home {
+    background-color: $homePageBgColor;
+    padding: 0;
+    margin-top: 0;
+    height: 100vh;
+
+    h1,
+    h2 {
+        color: $homePageFontColor;
+    }
+
+    &__boxes {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    &__content {
+        padding-top: 100px;
+    }
+
+    &__title {
+        @include font-clamp(40px, 72px, 320px, 1360px);
+    }
+
+    &__desc {
+        @include font-clamp(14px, 18px, 320px, 1360px);
+        line-height: 1.5;
+    }
+
+    &__button {
+        display: block;
+        width: 220px;
+        height: 70px;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 70px;
+        color: $homePageFontColor;
+        background-color: $buttonColor;
+    }
+
+    &__scores {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    &__number {
+        margin: 0;
+    }
+
+    &__numberTitle {
+        margin-top: 0;
+        @include font-clamp(18px, 20px, 320px, 1360px);
+    }
+
+    &__sidebar {
+        width: max(27%, 320px);
+        background-color: $homePageSidebarBgColor;
+        height: 100vh;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        position: relative;
+
+
+
+        img {
+            height: 100%;
+            translate: -10px;
+            filter: grayscale(100%);
+        }
+    }
+}

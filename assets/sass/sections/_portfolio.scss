@@ -1,0 +1,91 @@
+.portfolio {
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 -15px;
+    }
+
+    &__filterList {
+        @include reset-list;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin: 0 0 50px 0;
+    }
+
+    &__filter {
+        a {
+            color: $mainHeaderColor;
+        }
+
+        &--active {
+            display: flex;
+            position: relative;
+
+            a {
+                color: $activeTextColor;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                right: -10px;
+                bottom: 4px;
+                background-color: $buttonColor;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+
+            }
+
+        }
+    }
+
+    &__photos {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex-wrap: wrap;
+        width: 100%;
+        max-height: 1000px;
+
+    }
+
+    &__photo {
+        width: calc(100%/3);
+
+        img {
+            display: block;
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        &:nth-of-type(2) {
+            order: 2;
+        }
+
+        &:nth-of-type(3) {
+            order: 4;
+        }
+
+        &:nth-of-type(1) {
+            order: 1;
+        }
+
+        &:nth-of-type(4) {
+            order: 3;
+        }
+
+        &:nth-of-type(5) {
+            order: 5;
+        }
+
+        &:nth-of-type(6) {
+            order: 6;
+        }
+    }
+}

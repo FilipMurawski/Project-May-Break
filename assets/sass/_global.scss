@@ -1,0 +1,50 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $mainFontFamily;
+    color: $mainFontColor;
+    @include font-clamp(12px, 18px, 320px, 1360px);
+    line-height: 1.5;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headersFontFamily;
+    color: $mainHeaderColor;
+}
+
+h2 {
+    @include font-clamp(24px, 48px, 360px, 1360px);
+    margin: 0 0 50px 0;
+}
+
+a {
+    text-decoration: none;
+    color: $mainLinkColor;
+
+
+}
+
+.sub-title {
+    font-family: $mainFontFamily;
+    color: $subHeaderColor;
+    @include font-clamp(18px, 26px, 320px, 1360px);
+    margin: 0 0 5px 0;
+}
+
+.container {
+    max-width: 1360px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 150px;
+}

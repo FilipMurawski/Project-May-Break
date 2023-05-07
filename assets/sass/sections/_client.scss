@@ -1,0 +1,26 @@
+.client {
+    &__list {
+        @include reset-list;
+        background-color: $buttonColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin: 0 -15px;
+        border-radius: 25px;
+    }
+
+    &__icon {
+        a {
+            img {
+                transition: 200ms;
+            }
+
+            &:hover {
+                img {
+                    filter: brightness(200%);
+                }
+            }
+        }
+    }
+}
