@@ -1,5 +1,7 @@
 # Project-May-Break
 
+My first page build with Html, Scss and js.
+
 https://filipmurawski.github.io/Project-May-Break/
 
 TODO LIST
